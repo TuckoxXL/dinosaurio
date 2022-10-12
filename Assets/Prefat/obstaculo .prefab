@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempovivo: 0
   tiempomaximodevida: 10
-  velocidad: 8
+  velocidad: 7
 --- !u!50 &3917940337253770590
 Rigidbody2D:
   serializedVersion: 4
