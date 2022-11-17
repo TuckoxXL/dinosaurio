@@ -5,9 +5,9 @@ using UnityEngine;
 public class spawner : MonoBehaviour
 {
     public GameObject objetoAspawnear;
-    public float minX = 12f;
-    public float maxX = 15f;
-    public float Ypos = 0;
+    public float minX ;
+    public float maxX ;
+    public float Ypos ;
     public float mintiempoSpawn = 3f;
     public float maxtiempoSpawn = 5f;
 

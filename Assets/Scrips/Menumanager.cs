@@ -6,22 +6,13 @@ using UnityEngine.UI;
 
 public class Menumanager : MonoBehaviour
 {
-    public Button playbutton;
-
-    // Start is called before the first frame update
-    void Start()
+    public void LoadScene(string sceneName)
     {
-        
+        SceneManager.LoadScene(sceneName);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
-    }
-
-    public void Playgame()
-    {
-        SceneManager.LoadScene("SampleScene");
+        Application.Quit();
     }
 }

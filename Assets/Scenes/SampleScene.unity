@@ -136,7 +136,7 @@ GameObject:
   m_Layer: 0
   m_Name: 'Spawner Pajaro '
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6339fb4553f005b4c88288afa30804b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoAspawnear: {fileID: 7951043782390153889, guid: 5494e7c5987cd784f88ceac4af2278e0, type: 3}
+  objetoAspawnear: {fileID: 3002036701955943916, guid: 4edf1c5b14ac12a4eadb32b32edf2c92, type: 3}
   minX: 12
   maxX: 15
   Ypos: -2
@@ -1205,7 +1205,7 @@ GameObject:
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1236,9 +1236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6339fb4553f005b4c88288afa30804b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoAspawnear: {fileID: 3917940337253770581, guid: 297e759e81cc8774285b84cd5c943c38, type: 3}
+  objetoAspawnear: {fileID: 8083659630428753527, guid: 989a6fb4cb0782348bc600b19838bdb0, type: 3}
   minX: 12
   maxX: 15
-  Ypos: -3
+  Ypos: -4.4
   mintiempoSpawn: 1
   maxtiempoSpawn: 8

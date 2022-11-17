@@ -37,8 +37,8 @@ public class player : MonoBehaviour
 
         if (collision.gameObject.tag == "obstaculo")
         {
-            Time.timeScale = 0; 
-
+            Time.timeScale = 0;
+            SceneManager.LoadScene("Derrota");
         }
 
     }
