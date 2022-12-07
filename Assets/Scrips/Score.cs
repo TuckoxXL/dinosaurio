@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    //public Text HiScoreText;
+    public Text HiScoreText;
     int score;
     Text scoreText;
 
@@ -16,10 +16,11 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // HiScoreText.text = "HI   " + PlayerPrefs.GetInt("highscore", 0).ToString("00000");
+        HiScoreText.text = "Puntaje Maximo " + PlayerPrefs.GetInt("highscore", 0).ToString("000000");
         score = 0;
         scoreText = GetComponent<Text>();
         maxTimer = 0.1f;
+        
     }
 
     // Update is called once per frame
@@ -29,16 +30,17 @@ public class Score : MonoBehaviour
         if(Timer >= maxTimer)
         {
             score++;
-            scoreText.text = score.ToString("00000");
+            string v = score.ToString("000000");
+            scoreText.text = v;
             Timer = 0;
         }
 
-        if(Time.timeScale == 0)
+        if (Time.timeScale == 0)
         {
-            if(score > PlayerPrefs.GetInt("highscore", 0))
+            if (score > PlayerPrefs.GetInt("highscore", 0))
             {
                 PlayerPrefs.SetInt("highscore", score);
-               // HiScoreText.text = "HI   " + PlayerPrefs.GetInt("highscore", 0).ToString("00000");
+                HiScoreText.text = "Puntaje Maximo " + PlayerPrefs.GetInt("highscore", 0).ToString("000000");
             }
         }
     }
