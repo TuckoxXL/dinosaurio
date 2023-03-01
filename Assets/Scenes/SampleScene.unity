@@ -156,7 +156,7 @@ MonoBehaviour:
   minX: 15
   maxX: 18
   Ypos: -0.01
-  mintiempoSpawn: 9
+  mintiempoSpawn: 11
   maxtiempoSpawn: 15
 --- !u!4 &23202082
 Transform:
