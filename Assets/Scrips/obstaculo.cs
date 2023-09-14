@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
+using static UnityEngine.GraphicsBuffer;
 
 public class obstaculo : MonoBehaviour
 {
-    public float tiempovivo = 0f;
-    public float tiempomaximodevida = 6f;
-    public float velocidad = 8f;
+    public Rigidbody2D piedra;
+    public float piedraSpeed;
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        transform.position -= new Vector3(velocidad * (Time.deltaTime), 0, 0);
-        tiempovivo += Time.deltaTime;
-
-        if(tiempovivo >= tiempomaximodevida)
-        {
-            Destroy(this.gameObject);
-        }
+        piedra.velocity = Vector2.left * piedraSpeed;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("cayo");
+        gameObject.SetActive(false);
     }
 }
